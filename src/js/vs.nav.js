@@ -1,4 +1,7 @@
 const vsNavContainer = document.querySelector('#vs-nav-container');
+
+vsNavContainer.innerHTML += '<div id="vs-nav-mobile-icon"><span></span><span></span><span></span></div>';
+
 const vsNav = document.querySelector('#vs-nav');
 const vsNavItems = document.querySelectorAll('#vs-nav li');
 const vsNavMobileIcon = document.querySelector('#vs-nav-mobile-icon');

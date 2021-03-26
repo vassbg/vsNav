@@ -9,7 +9,9 @@
 :::...::::::......:::...::..::::..::..:::::..:::::...:::::
 **/
 :root {
+    --menu-font-size: 14px;
     --menu-height: 70px;
+    --sub-menu-height: 50px;
     --menu-align: flex-end;
     --menu-background: #293742;
     --menu-hover-background: #202b33;
@@ -28,6 +30,7 @@
     display: flex;
     justify-content: var(--menu-align);
     background: var(--menu-background);
+    z-index: 100;
 }
 
 #vs-nav-container ul {
@@ -53,6 +56,7 @@
     line-height: var(--menu-height);
     color: var(--menu-color);
     transition: all 0.3s;
+    font-size: var(--menu-font-size);
 }
 
 #vs-nav li > a:hover {
@@ -73,6 +77,8 @@
     text-align: var(--sub-menu-text-align);
     background: var(--sub-menu-background);
     color: var(--sub-menu-color);
+    height: var(--sub-menu-height);
+    line-height: var(--sub-menu-height);
 }
 
 #vs-nav li > ul > li > a:hover {
